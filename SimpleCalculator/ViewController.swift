@@ -20,10 +20,11 @@ class ViewController: UIViewController {
     }
     
     //Instance Variables
-    var hasDecimal:Bool = false
-    var hasPressedOperator:Bool = false
-    var numberOnScreen:String = "0"
-    var numberOnMemory:String = "0"
+    var hasDecimal: Bool = false
+    var lastInputWasOperator: Bool = false
+    var keptPressingEquals: Bool = false
+    var numberOnScreen: String = "0"
+    var numberInMemory: String = "0"
     var lastOperatorPressed: Int = 0
     
     //IBOutlets
@@ -50,9 +51,10 @@ class ViewController: UIViewController {
                 hasDecimal = true
             }
         }
-        else if hasPressedOperator {
+        else if (lastInputWasOperator == true) {
+            numberInMemory = numberOnScreen
             numberOnScreen = String(sender.tag)
-            hasPressedOperator = false
+            lastInputWasOperator = false
         }
         else {
             numberOnScreen.append(String(sender.tag))
@@ -66,6 +68,8 @@ class ViewController: UIViewController {
             btnClear.setTitle("AC", for: .normal)
         }
         
+        keptPressingEquals = false
+        
         //Display the current result on the result area
         resultArea.text = numberOnScreen
         
@@ -78,7 +82,22 @@ class ViewController: UIViewController {
         
         //Function Clear
         case functions.clear.rawValue:
-            numberOnScreen = "0"
+            if (numberOnScreen == "0" && numberInMemory == "0") {
+                hasDecimal = false
+                lastInputWasOperator = false
+                keptPressingEquals = false
+                numberOnScreen = "0"
+                numberInMemory = "0"
+                lastOperatorPressed = 0
+            }
+            else if (numberOnScreen == "0") {
+                numberInMemory = "0"
+            }
+            else {
+                numberOnScreen = "0"
+            }
+
+            btnClear.setTitle("AC", for: .normal)
             
         //Function Plus and Minus
         case functions.plusMinus.rawValue:
@@ -91,63 +110,99 @@ class ViewController: UIViewController {
             }
             
         //Function Percentage
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
+        case functions.percentage.rawValue:
+            if (numberInMemory != "0" && numberOnScreen != "0" && lastOperatorPressed == functions.add.rawValue) {
+                numberOnScreen = String(Double(numberInMemory)! * Double(numberOnScreen)! / Double(100))
+            }
+            else {
+                numberOnScreen = String(Double(numberOnScreen)! / (Double(100)))
+            }
             
         //Operator Divide
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
+        case functions.div.rawValue:
+            //numberInMemory = numberOnScreen
+            lastInputWasOperator = true
+            lastOperatorPressed = functions.div.rawValue
             
         //Operator Multiply
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
+        case functions.mult.rawValue:
+            //numberInMemory = numberOnScreen
+            lastInputWasOperator = true
+            lastOperatorPressed = functions.mult.rawValue
             
         //Operator Subtract
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
-        //IMPLEMENT
+        case functions.sub.rawValue:
+            //numberInMemory = numberOnScreen
+            lastInputWasOperator = true
+            lastOperatorPressed = functions.sub.rawValue
             
         //Operator Add
         case functions.add.rawValue:
-            numberOnMemory = numberOnScreen
-            hasPressedOperator = true
+            //numberInMemory = numberOnScreen
+            lastInputWasOperator = true
             lastOperatorPressed = functions.add.rawValue
             
         //Operator Equals
         case functions.equals.rawValue:
             
+            let nos: String = numberOnScreen
+            
+            //The operator Equals needs to consider the previous operator input, so I'm creating a case structure to make this verification
             switch lastOperatorPressed {
+            
+            //Divide
+            case functions.div.rawValue:
+                if (keptPressingEquals) {
+                    numberOnScreen = String((Double(numberOnScreen)! / Double(numberInMemory)!))
+                }
+                else {
+                    numberOnScreen = String((Double(numberInMemory)! / Double(numberOnScreen)!))
+                }
+            
+            //Multiply
+            case functions.mult.rawValue:
+                numberOnScreen = String((Double(numberInMemory)! * Double(numberOnScreen)!))
+                
+            //Subtract
+            case functions.sub.rawValue:
+                if (keptPressingEquals) {
+                    numberOnScreen = String((Double(numberOnScreen)! - Double(numberInMemory)!))
+                }
+                else {
+                    numberOnScreen = String((Double(numberInMemory)! - Double(numberOnScreen)!))
+                }
                 
             //Add
             case functions.add.rawValue:
-                numberOnScreen = String((Double(numberOnMemory)! + Double(numberOnScreen)!))
-                
-                if numberOnScreen.suffix(2) == ".0" {
-                        numberOnScreen = String(numberOnScreen.prefix(numberOnScreen.count - 2))
-                }
+                numberOnScreen = String((Double(numberInMemory)! + Double(numberOnScreen)!))
             
             //Apparently there has to be a default option for the switch case
             default: break
             }
+            
+            if (!keptPressingEquals) {
+                numberInMemory = nos
+            }
+            
+            keptPressingEquals = true
         
         //Apparently there has to be a default option for the switch case
         default: break
             
         }
         
+        //Remove the decimal number if the result is a complete integer
+        if numberOnScreen.suffix(2) == ".0" {
+            numberOnScreen = String(numberOnScreen.prefix(numberOnScreen.count - 2))
+        }
+        
         //Display the current result on the result area
-        resultArea.text = numberOnScreen
+        if (numberOnScreen != "inf") {
+            resultArea.text = numberOnScreen
+        }
+        else {
+            resultArea.text = "Not a valid operation!"
+        }
         
     }
     
