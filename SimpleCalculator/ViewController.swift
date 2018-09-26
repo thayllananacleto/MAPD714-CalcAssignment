@@ -8,10 +8,14 @@ class ViewController: UIViewController {
     
     //Enum used to identify the functions
     enum functions: Int {
-        case dot = -1
-        case clear = -2
-        case plusMinus = -3
-        case percentage = -4
+        case squareRoot = -1
+        case squared = -2
+        case percentage = -3
+        case backspace = -4
+        case clearEntry = -5
+        case clearAll = -6
+        case plusMinus = -7
+        case dot = -8
     }
     
     //Enum used to identify the operators
@@ -88,8 +92,8 @@ class ViewController: UIViewController {
         
         switch sender.tag {
             
-        //Function Clear
-        case functions.clear.rawValue:
+        //Function ClearEntry
+        case functions.clearEntry.rawValue:
             if (numberOnScreen == "0" && numberInMemory == "0") {
                 hasDecimal = false
                 lastInputWasOperator = false
@@ -262,6 +266,10 @@ class ViewController: UIViewController {
             resultArea.text = "Not a valid operation!"
         }
         
+    }
+    
+    @IBAction func buttonAnimation(_ sender: UIButton) {
+        sender.pulsate()
     }
     
 }

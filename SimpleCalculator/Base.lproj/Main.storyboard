@@ -18,223 +18,294 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-9g-jsM">
-                                <rect key="frame" x="0.0" y="489" width="159" height="79"/>
+                                <rect key="frame" x="0.0" y="498" width="159" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="0"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liO-fo-fpY"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLW-uS-je3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-tc-46i">
-                                <rect key="frame" x="0.0" y="409" width="79" height="79"/>
+                                <rect key="frame" x="0.0" y="428" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="1"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGP-Nc-oyh"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feg-rM-fFV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-vI-5jm">
-                                <rect key="frame" x="0.0" y="329" width="79" height="79"/>
+                                <rect key="frame" x="0.0" y="358" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="4"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87K-ic-ecs"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCX-HF-8Va"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-1i-ZgF">
-                                <rect key="frame" x="0.0" y="249" width="79" height="79"/>
+                                <rect key="frame" x="0.0" y="288" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="7"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYR-6c-fDh"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hj-46-GGx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-SD-Tr5">
-                                <rect key="frame" x="0.0" y="169" width="79" height="79"/>
+                            <button opaque="NO" tag="-5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-SD-Tr5">
+                                <rect key="frame" x="0.0" y="218" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="AC"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CE"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGf-Ts-nvO"/>
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56l-BV-rgK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-ZI-iNX">
-                                <rect key="frame" x="80" y="169" width="79" height="79"/>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Uu-nzE">
+                                <rect key="frame" x="0.0" y="148" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="+/-"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="√"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7R-xO-fO7"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCa-0c-k1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-8u-gYV">
+                                <rect key="frame" x="80" y="148" width="79" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="x²"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVi-G2-9r7"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltm-Do-geF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-ZI-iNX">
+                                <rect key="frame" x="80" y="218" width="79" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="66k-eJ-245"/>
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pie-Vp-UPE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-fZ-aSL">
-                                <rect key="frame" x="80" y="249" width="79" height="79"/>
+                                <rect key="frame" x="80" y="288" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="8"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wL-5Z-4BC"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbH-rS-b5T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-FE-AVv">
-                                <rect key="frame" x="80" y="329" width="79" height="79"/>
+                                <rect key="frame" x="80" y="358" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="5"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1u-05-NV5"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXM-fn-lum"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-hV-MDd">
-                                <rect key="frame" x="80" y="409" width="79" height="79"/>
+                                <rect key="frame" x="80" y="428" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="2"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsB-AC-bmZ"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvq-ly-BRO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-oL-9OV">
-                                <rect key="frame" x="160" y="169" width="79" height="79"/>
+                            <button opaque="NO" tag="-7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-oL-9OV">
+                                <rect key="frame" x="160" y="218" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="%"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="±"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJ2-8I-O6l"/>
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clv-h8-eMH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="828-eV-2LS">
-                                <rect key="frame" x="160" y="329" width="79" height="79"/>
+                                <rect key="frame" x="160" y="358" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="6"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxq-ns-ed5"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lL4-e2-aro"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-2Y-Bbs">
-                                <rect key="frame" x="160" y="409" width="79" height="79"/>
+                                <rect key="frame" x="160" y="428" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="3"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gio-rj-2bR"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz0-e6-CyL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-b7-EAc">
-                                <rect key="frame" x="160" y="489" width="79" height="79"/>
+                            <button opaque="NO" tag="-8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-b7-EAc">
+                                <rect key="frame" x="160" y="498" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="70"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="."/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cQ-rT-x1J"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JP-UT-fwa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kh-ip-fPl">
-                                <rect key="frame" x="240" y="169" width="79" height="79"/>
+                                <rect key="frame" x="240" y="218" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="/"/>
+                                <state key="normal" title="÷"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dar-1Q-8Ym"/>
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N45-hV-eot"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qte-qK-k9H">
-                                <rect key="frame" x="240" y="249" width="79" height="79"/>
+                                <rect key="frame" x="240" y="288" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="x"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCo-7c-bJD"/>
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbD-ro-XMe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-HD-WqC">
-                                <rect key="frame" x="240" y="329" width="79" height="79"/>
+                                <rect key="frame" x="240" y="358" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="80"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="-"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ema-Jm-SQz"/>
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPl-gJ-LKU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COV-Jr-HZh">
-                                <rect key="frame" x="240" y="409" width="79" height="79"/>
+                                <rect key="frame" x="240" y="428" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5R-t3-Tnu"/>
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kq-GU-K4r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="-5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Fg-LNv">
-                                <rect key="frame" x="240" y="489" width="79" height="79"/>
+                                <rect key="frame" x="240" y="498" width="80" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="="/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOD-u6-Vlk"/>
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ur-bx-vx2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-eF-zph">
-                                <rect key="frame" x="7" y="91" width="306" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-3O-iJT">
-                                <rect key="frame" x="160" y="249" width="79" height="79"/>
+                                <rect key="frame" x="160" y="288" width="79" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="9"/>
                                 <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3S-bj-Xxe"/>
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzv-2y-D46"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="-3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-gp-z00">
+                                <rect key="frame" x="160" y="148" width="79" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="%"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5L-f6-fqg"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHR-xl-0tw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Ge-Mqd">
+                                <rect key="frame" x="240" y="148" width="80" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="25"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="⌫"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWO-rq-XZ3"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iy-De-oHJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abstract-blue-particles-background_egre8rf_g__F0000" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-0s-sxL">
+                                <rect key="frame" x="-1" y="0.0" width="321" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-eF-zph">
+                                <rect key="frame" x="7" y="81" width="306" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -247,4 +318,7 @@
             <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="abstract-blue-particles-background_egre8rf_g__F0000" width="3840" height="2160"/>
+    </resources>
 </document>

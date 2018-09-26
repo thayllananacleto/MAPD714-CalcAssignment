@@ -14,6 +14,7 @@
 		9D3E45C72153D8A2002FE2A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3E45C52153D8A2002FE2A8 /* LaunchScreen.storyboard */; };
 		9D3E45D22153D8A2002FE2A8 /* SimpleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E45D12153D8A2002FE2A8 /* SimpleCalculatorTests.swift */; };
 		9D3E45DD2153D8A2002FE2A8 /* SimpleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E45DC2153D8A2002FE2A8 /* SimpleCalculatorUITests.swift */; };
+		9D9175DE215BE00A00BAAA5E /* uiButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9175DD215BE00A00BAAA5E /* uiButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9D3E45D82153D8A2002FE2A8 /* SimpleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3E45DC2153D8A2002FE2A8 /* SimpleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorUITests.swift; sourceTree = "<group>"; };
 		9D3E45DE2153D8A2002FE2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D9175DD215BE00A00BAAA5E /* uiButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9D3E45C32153D8A2002FE2A8 /* Assets.xcassets */,
 				9D3E45C52153D8A2002FE2A8 /* LaunchScreen.storyboard */,
 				9D3E45C82153D8A2002FE2A8 /* Info.plist */,
+				9D9175DD215BE00A00BAAA5E /* uiButtonExtension.swift */,
 			);
 			path = SimpleCalculator;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				9D3E45BF2153D8A0002FE2A8 /* ViewController.swift in Sources */,
 				9D3E45BD2153D8A0002FE2A8 /* AppDelegate.swift in Sources */,
+				9D9175DE215BE00A00BAAA5E /* uiButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
