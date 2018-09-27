@@ -85,6 +85,16 @@ class ViewController: UIViewController {
         
         switch sender.tag {
         
+        //Function Square Root
+        case functions.squareRoot.rawValue:
+            let result = Double(numberOnScreen)?.squareRoot()
+            numberOnScreen = result!.description
+            
+        //Function Squared
+        case functions.squared.rawValue:
+            let result = (Double(numberOnScreen)! * Double(numberOnScreen)!)
+            numberOnScreen = result.description
+            
         //Function Backspace
         case functions.backspace.rawValue:
             if numberOnScreen.count > 1 {
@@ -97,6 +107,10 @@ class ViewController: UIViewController {
         
         //Function ClearEntry
         case functions.clearEntry.rawValue:
+            numberOnScreen = "0"
+        
+        //Function ClearAll
+        case functions.clearAll.rawValue:
             if (numberOnScreen == "0" && numberInMemory == "0") {
                 hasDecimal = false
                 lastInputWasOperator = false
@@ -111,10 +125,6 @@ class ViewController: UIViewController {
             else {
                 numberOnScreen = "0"
             }
-            
-        //Function ClearAll
-        case functions.clearAll.rawValue:
-            numberOnScreen = "0"
         
         //Function Plus and Minus
         case functions.plusMinus.rawValue:
