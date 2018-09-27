@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     //Instance Variables
     var hasDecimal: Bool = false
     var lastInputWasOperator: Bool = false
-    var keptPressingEquals: Bool = false
+    var justUsedEquals: Bool = false
+    var startedNewOperation: Bool = false
     var numberOnScreen: String = "0"
     var numberInMemory: String = "0"
     var lastOperatorPressed: Int = 0
@@ -68,15 +69,7 @@ class ViewController: UIViewController {
             numberOnScreen.append(String(sender.tag))
         }
         
-        //Set the Clear button text depending on the number on screen
-        if (numberOnScreen != "0") {
-            btnClear.setTitle("C", for: .normal)
-        }
-        else {
-            btnClear.setTitle("AC", for: .normal)
-        }
-        
-        keptPressingEquals = false
+        justUsedEquals = false
         lastInputWasOperator = false
         
         //Variable to check if the number on screen is a decimal number
@@ -91,13 +84,23 @@ class ViewController: UIViewController {
     @IBAction func onFunctionButtonPress(_ sender: UIButton) {
         
         switch sender.tag {
-            
+        
+        //Function Backspace
+        case functions.backspace.rawValue:
+            if numberOnScreen.count > 1 {
+                numberOnScreen = String(numberOnScreen.prefix(numberOnScreen.count - 1))
+            }
+            else
+            {
+                numberOnScreen = "0"
+            }
+        
         //Function ClearEntry
         case functions.clearEntry.rawValue:
             if (numberOnScreen == "0" && numberInMemory == "0") {
                 hasDecimal = false
                 lastInputWasOperator = false
-                keptPressingEquals = false
+                justUsedEquals = false
                 numberOnScreen = "0"
                 numberInMemory = "0"
                 lastOperatorPressed = 0
@@ -109,8 +112,10 @@ class ViewController: UIViewController {
                 numberOnScreen = "0"
             }
             
-            btnClear.setTitle("AC", for: .normal)
-            
+        //Function ClearAll
+        case functions.clearAll.rawValue:
+            numberOnScreen = "0"
+        
         //Function Plus and Minus
         case functions.plusMinus.rawValue:
             if (Int(numberOnScreen)! > 0) {
@@ -136,6 +141,7 @@ class ViewController: UIViewController {
         }
         
         lastInputWasOperator = false
+        justUsedEquals = false
         
         //Variable to check if the number on screen is a decimal number
         hasDecimal = (rint(Double(numberOnScreen)!) != Double(numberOnScreen)!)
@@ -163,7 +169,7 @@ class ViewController: UIViewController {
             
         //Operator Divide
         case operators.div.rawValue:
-            if (numberInMemory != "0" && numberOnScreen != "0" && lastOperatorPressed != operators.equals.rawValue) {
+            if (numberInMemory != "0" && numberOnScreen != "0" && !justUsedEquals) {
                 equals()
             }
             
@@ -171,7 +177,7 @@ class ViewController: UIViewController {
             
         //Operator Multiply
         case operators.mult.rawValue:
-            if (numberInMemory != "0" && numberOnScreen != "0" && lastOperatorPressed != operators.equals.rawValue) {
+            if (numberInMemory != "0" && numberOnScreen != "0" && !justUsedEquals) {
                 equals()
             }
             
@@ -179,7 +185,7 @@ class ViewController: UIViewController {
             
         //Operator Subtract
         case operators.sub.rawValue:
-            if (numberInMemory != "0" && numberOnScreen != "0" && lastOperatorPressed != operators.equals.rawValue) {
+            if (numberInMemory != "0" && numberOnScreen != "0" && !justUsedEquals) {
                 equals()
             }
             
@@ -187,7 +193,7 @@ class ViewController: UIViewController {
             
         //Operator Add
         case operators.add.rawValue:
-            if (numberInMemory != "0" && numberOnScreen != "0" && lastOperatorPressed != operators.equals.rawValue) {
+            if (numberInMemory != "0" && numberOnScreen != "0" && !justUsedEquals) {
                 equals()
             }
             
@@ -196,6 +202,7 @@ class ViewController: UIViewController {
         //Operator Equals
         case operators.equals.rawValue:
             equals()
+            justUsedEquals = true
         
         //Apparently there has to be a default option for the switch case
         default: break
@@ -215,7 +222,7 @@ class ViewController: UIViewController {
             
         //Divide
         case operators.div.rawValue:
-            if (keptPressingEquals) {
+            if (justUsedEquals) {
                 numberOnScreen = String((Double(numberOnScreen)! / Double(numberInMemory)!))
             }
             else {
@@ -228,7 +235,7 @@ class ViewController: UIViewController {
             
         //Subtract
         case operators.sub.rawValue:
-            if (keptPressingEquals) {
+            if (justUsedEquals) {
                 numberOnScreen = String((Double(numberOnScreen)! - Double(numberInMemory)!))
             }
             else {
@@ -243,12 +250,11 @@ class ViewController: UIViewController {
         default: break
         }
         
-        if (!keptPressingEquals) {
+        if (!justUsedEquals) {
             numberInMemory = nos
         }
         
-        keptPressingEquals = true
-        lastInputWasOperator = true
+        justUsedEquals = true
         
         //Variable to check if the number on screen is a decimal number
         hasDecimal = (rint(Double(numberOnScreen)!) != Double(numberOnScreen)!)
