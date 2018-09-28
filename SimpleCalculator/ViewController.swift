@@ -335,7 +335,7 @@ class ViewController: UIViewController {
             numberInMemory = String(numberInMemory.suffix(1))
         }
         
-        if numberInMemory.contains("na") || numberInMemory.contains("nan") {
+        if numberOnScreen.contains("na") || numberInMemory.contains("nan") {
             numberOnScreen = "0"
         }
         
