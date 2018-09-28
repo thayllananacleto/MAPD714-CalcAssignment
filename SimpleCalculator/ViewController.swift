@@ -323,7 +323,7 @@ class ViewController: UIViewController {
     //Method created to prevent some bugs from happening
     func errorPrevention() {
         
-        if numberInMemory.contains("inf") || numberInMemory.contains("na") || numberInMemory.contains("nan") {
+        if numberInMemory.contains("na") || numberInMemory.contains("nan") {
             numberInMemory = "0"
         }
         
@@ -335,7 +335,7 @@ class ViewController: UIViewController {
             numberInMemory = String(numberInMemory.suffix(1))
         }
         
-        if numberOnScreen.contains("inf") || numberInMemory.contains("na") || numberInMemory.contains("nan") {
+        if numberInMemory.contains("na") || numberInMemory.contains("nan") {
             numberOnScreen = "0"
         }
         
