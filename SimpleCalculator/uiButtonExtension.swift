@@ -5,10 +5,13 @@
 //  Created by Thayllan Anacleto on 2018-09-26.
 //  Copyright © 2018 Thayllan Anacleto. All rights reserved.
 //
+//  StudentID: 300973606
+//  Version: 1.0.0
 
 import Foundation
 import UIKit
 
+//Class responsible for doing the animations on the buttons
 extension UIButton {
     
     func pulsate() {

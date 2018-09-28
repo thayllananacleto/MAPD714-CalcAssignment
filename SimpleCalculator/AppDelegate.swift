@@ -5,6 +5,8 @@
 //  Created by Thayllan Anacleto on 2018-09-20.
 //  Copyright © 2018 Thayllan Anacleto. All rights reserved.
 //
+//  StudentID: 300973606
+//  Version: 1.0.0
 
 import UIKit
 
