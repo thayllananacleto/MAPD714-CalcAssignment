@@ -12,9 +12,45 @@ import UIKit
 
 //This class is the core of the application
 class ViewController: UIViewController {
-
+    
+    //IBOutlets
+    @IBOutlet weak var resultArea: UILabel!
+    @IBOutlet var calcView: UIView!
+    @IBOutlet weak var btnSquareRoot: UIButton!
+    @IBOutlet weak var btnSquared: UIButton!
+    @IBOutlet weak var btnPercentage: UIButton!
+    @IBOutlet weak var btnBackspace: UIButton!
+    @IBOutlet weak var btnClearEntry: UIButton!
+    @IBOutlet weak var btnClear: UIButton!
+    @IBOutlet weak var btnPlusMinus: UIButton!
+    @IBOutlet weak var btnDivision: UIButton!
+    @IBOutlet weak var btnMultiply: UIButton!
+    @IBOutlet weak var btnMinus: UIButton!
+    @IBOutlet weak var btnPlus: UIButton!
+    @IBOutlet weak var btnEquals: UIButton!
+    @IBOutlet weak var ivResults: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        view.backgroundColor = Theme.current.background
+        btnSquareRoot.backgroundColor = Theme.current.functions
+        btnSquared.backgroundColor = Theme.current.functions
+        btnPercentage.backgroundColor = Theme.current.functions
+        btnBackspace.backgroundColor = Theme.current.functions
+        btnClearEntry.backgroundColor = Theme.current.functions
+        btnClear.backgroundColor = Theme.current.functions
+        btnPlusMinus.backgroundColor = Theme.current.functions
+        btnDivision.backgroundColor = Theme.current.functions
+        btnMultiply.backgroundColor = Theme.current.functions
+        btnMinus.backgroundColor = Theme.current.functions
+        btnPlus.backgroundColor = Theme.current.functions
+        btnEquals.backgroundColor = Theme.current.functions
+        ivResults.image = Theme.current.img
     }
     
     //Enum used to identify the functions
@@ -46,10 +82,6 @@ class ViewController: UIViewController {
     var numberOnScreen: String = "0"
     var numberInMemory: String = "0"
     var lastOperatorPressed: Int = 0
-    
-    //IBOutlets
-    @IBOutlet weak var resultArea: UILabel!
-    @IBOutlet weak var btnClear: UIButton!
     
     //Method used when pressing any of the numbers or the "."
     @IBAction func onNumberButtonPress(_ sender: UIButton) {

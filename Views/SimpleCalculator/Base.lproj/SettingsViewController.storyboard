@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KNB-CA-rhJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Change Theme-->
+        <scene sceneID="C7b-PR-lCz">
+            <objects>
+                <viewController title="Change Theme" id="KNB-CA-rhJ" customClass="SettingsViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0B-vE-QxY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="up4-dR-Pl5">
+                                <rect key="frame" x="122" y="373" width="130" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="8Pi-Ud-L9f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeThemeToGreen:" destination="KNB-CA-rhJ" eventType="touchUpInside" id="MJP-EH-6Rp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EH6-bJ-o7J">
+                                <rect key="frame" x="130" y="224" width="114" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeThemeToRed:" destination="KNB-CA-rhJ" eventType="touchUpInside" id="TFS-of-sLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-E6-k7i">
+                                <rect key="frame" x="104" y="97" width="166" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="pLY-rf-RIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Default">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeThemeToDefault:" destination="KNB-CA-rhJ" eventType="touchUpInside" id="1wr-rp-Q97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFK-dZ-SXw">
+                                <rect key="frame" x="136" y="490" width="102" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="tkd-2O-44g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Gray">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeThemeToGray:" destination="KNB-CA-rhJ" eventType="touchUpInside" id="xts-I7-XoC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="up4-dR-Pl5" firstAttribute="centerX" secondItem="gFK-dZ-SXw" secondAttribute="centerX" id="1xY-o4-NhT"/>
+                            <constraint firstItem="EH6-bJ-o7J" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="130" id="6R2-36-Lyi"/>
+                            <constraint firstItem="2hl-E6-k7i" firstAttribute="centerX" secondItem="f0B-vE-QxY" secondAttribute="centerX" id="77w-Gv-zYP"/>
+                            <constraint firstItem="up4-dR-Pl5" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="122" id="AOS-5p-t5N"/>
+                            <constraint firstItem="EH6-bJ-o7J" firstAttribute="top" secondItem="2hl-E6-k7i" secondAttribute="bottom" constant="31" id="MSM-GO-2ac"/>
+                            <constraint firstItem="2hl-E6-k7i" firstAttribute="top" secondItem="qae-TE-BIz" secondAttribute="top" constant="77" id="PMk-N6-Xlr"/>
+                            <constraint firstItem="EH6-bJ-o7J" firstAttribute="centerX" secondItem="up4-dR-Pl5" secondAttribute="centerX" id="Tel-hC-ETx"/>
+                            <constraint firstItem="up4-dR-Pl5" firstAttribute="top" secondItem="EH6-bJ-o7J" secondAttribute="bottom" constant="53" id="XFC-6g-v7Z"/>
+                            <constraint firstItem="gFK-dZ-SXw" firstAttribute="top" secondItem="up4-dR-Pl5" secondAttribute="bottom" constant="64" id="bjR-zv-xGc"/>
+                            <constraint firstItem="gFK-dZ-SXw" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="136" id="cAB-Q6-eSr"/>
+                            <constraint firstItem="2hl-E6-k7i" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="104" id="krm-WH-iX1"/>
+                            <constraint firstItem="2hl-E6-k7i" firstAttribute="centerX" secondItem="EH6-bJ-o7J" secondAttribute="centerX" id="tH4-ce-jQr"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="bottom" secondItem="gFK-dZ-SXw" secondAttribute="bottom" constant="105" id="yec-8N-gQX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qae-TE-BIz"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDefault" destination="2hl-E6-k7i" id="ypc-hX-1jD"/>
+                        <outlet property="btnGray" destination="gFK-dZ-SXw" id="PM2-PA-qgo"/>
+                        <outlet property="btnGreen" destination="up4-dR-Pl5" id="Mrl-4c-uXP"/>
+                        <outlet property="btnRed" destination="EH6-bJ-o7J" id="oLA-4R-rWT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw8-m2-8pp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2125.5999999999999" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>

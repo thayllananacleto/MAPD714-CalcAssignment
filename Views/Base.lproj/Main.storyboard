@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j4W-kX-Ea0">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-9g-jsM">
-                                <rect key="frame" x="0.0" y="498" width="159.5" height="69"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-9g-jsM">
+                                <rect key="frame" x="0.0" y="507" width="159.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -28,8 +29,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLW-uS-je3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-tc-46i">
-                                <rect key="frame" x="0.0" y="428" width="79.5" height="69"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-tc-46i">
+                                <rect key="frame" x="0.0" y="445" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="r0n-23-kzD"/>
@@ -42,8 +43,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feg-rM-fFV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-vI-5jm">
-                                <rect key="frame" x="0.0" y="358" width="79.5" height="69"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-vI-5jm">
+                                <rect key="frame" x="0.0" y="383" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="k7v-b2-FQD"/>
@@ -56,8 +57,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCX-HF-8Va"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-1i-ZgF">
-                                <rect key="frame" x="0.0" y="288" width="79.5" height="69"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-1i-ZgF">
+                                <rect key="frame" x="0.0" y="321" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="z4P-Mt-ihf"/>
@@ -70,8 +71,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hj-46-GGx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-SD-Tr5">
-                                <rect key="frame" x="0.0" y="218" width="79.5" height="69"/>
+                            <button opaque="NO" tag="-5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-SD-Tr5">
+                                <rect key="frame" x="0.0" y="259" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="rVL-OM-2zg"/>
@@ -84,8 +85,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56l-BV-rgK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Uu-nzE">
-                                <rect key="frame" x="0.0" y="148" width="79.5" height="69"/>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Uu-nzE">
+                                <rect key="frame" x="0.0" y="197" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="H6g-rw-fzh"/>
@@ -104,8 +105,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCa-0c-k1b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-8u-gYV">
-                                <rect key="frame" x="80.5" y="148" width="79" height="69"/>
+                            <button opaque="NO" tag="-2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-8u-gYV">
+                                <rect key="frame" x="80.5" y="197" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="79" id="mzX-lb-OLs"/>
@@ -123,8 +124,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltm-Do-geF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-ZI-iNX">
-                                <rect key="frame" x="80.5" y="218" width="79" height="69"/>
+                            <button opaque="NO" tag="-6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-ZI-iNX">
+                                <rect key="frame" x="80.5" y="259" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
                                 <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,8 +135,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pie-Vp-UPE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-fZ-aSL">
-                                <rect key="frame" x="80.5" y="288" width="79" height="69"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-fZ-aSL">
+                                <rect key="frame" x="80.5" y="321" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -145,8 +146,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbH-rS-b5T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-FE-AVv">
-                                <rect key="frame" x="80.5" y="358" width="79" height="69"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-FE-AVv">
+                                <rect key="frame" x="80.5" y="383" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -156,8 +157,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXM-fn-lum"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-hV-MDd">
-                                <rect key="frame" x="80.5" y="428" width="79" height="69"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-hV-MDd">
+                                <rect key="frame" x="80.5" y="445" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -167,8 +168,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvq-ly-BRO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-oL-9OV">
-                                <rect key="frame" x="160.5" y="218" width="79.5" height="69"/>
+                            <button opaque="NO" tag="-7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-oL-9OV">
+                                <rect key="frame" x="160.5" y="259" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
                                 <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,8 +179,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clv-h8-eMH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="828-eV-2LS">
-                                <rect key="frame" x="160.5" y="358" width="79.5" height="69"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="828-eV-2LS">
+                                <rect key="frame" x="160.5" y="383" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -189,8 +190,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lL4-e2-aro"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-2Y-Bbs">
-                                <rect key="frame" x="160.5" y="428" width="79.5" height="69"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-2Y-Bbs">
+                                <rect key="frame" x="160.5" y="445" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -200,8 +201,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz0-e6-CyL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-b7-EAc">
-                                <rect key="frame" x="160.5" y="498" width="79.5" height="69"/>
+                            <button opaque="NO" tag="-8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-b7-EAc">
+                                <rect key="frame" x="160.5" y="507" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="70"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -212,8 +213,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JP-UT-fwa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kh-ip-fPl">
-                                <rect key="frame" x="241" y="218" width="79" height="69"/>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kh-ip-fPl">
+                                <rect key="frame" x="241" y="259" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,8 +224,8 @@
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N45-hV-eot"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qte-qK-k9H">
-                                <rect key="frame" x="241" y="288" width="79" height="69"/>
+                            <button opaque="NO" tag="-2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qte-qK-k9H">
+                                <rect key="frame" x="241" y="321" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,8 +235,8 @@
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbD-ro-XMe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-HD-WqC">
-                                <rect key="frame" x="241" y="358" width="79" height="69"/>
+                            <button opaque="NO" tag="-3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-HD-WqC">
+                                <rect key="frame" x="241" y="383" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="80"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -245,8 +246,8 @@
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPl-gJ-LKU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COV-Jr-HZh">
-                                <rect key="frame" x="241" y="428" width="79" height="69"/>
+                            <button opaque="NO" tag="-4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COV-Jr-HZh">
+                                <rect key="frame" x="241" y="445" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -256,8 +257,8 @@
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kq-GU-K4r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Fg-LNv">
-                                <rect key="frame" x="241" y="498" width="79" height="69"/>
+                            <button opaque="NO" tag="-5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Fg-LNv">
+                                <rect key="frame" x="241" y="507" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -267,8 +268,8 @@
                                     <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ur-bx-vx2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-3O-iJT">
-                                <rect key="frame" x="160.5" y="288" width="79.5" height="69"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-3O-iJT">
+                                <rect key="frame" x="160.5" y="321" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -278,8 +279,8 @@
                                     <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzv-2y-D46"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-gp-z00">
-                                <rect key="frame" x="160.5" y="148" width="79.5" height="69"/>
+                            <button opaque="NO" tag="-3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-gp-z00">
+                                <rect key="frame" x="160.5" y="197" width="79.5" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="79" id="Y8o-sY-XiR"/>
@@ -297,8 +298,8 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHR-xl-0tw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="-4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Ge-Mqd">
-                                <rect key="frame" x="241" y="148" width="79" height="69"/>
+                            <button opaque="NO" tag="-4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Ge-Mqd">
+                                <rect key="frame" x="241" y="197" width="79" height="61"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="25"/>
                                 <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -308,11 +309,11 @@
                                     <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iy-De-oHJ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abstract-blue-particles-background_egre8rf_g__F0000" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-0s-sxL">
-                                <rect key="frame" x="-1" y="0.0" width="321" height="148"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-0s-sxL">
+                                <rect key="frame" x="-1" y="49" width="321" height="148"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-eF-zph">
-                                <rect key="frame" x="7" y="81" width="306" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-eF-zph">
+                                <rect key="frame" x="7" y="109" width="306" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="fpN-GC-Wh9"/>
                                 </constraints>
@@ -449,17 +450,63 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IR6-1Z-kbo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="Bn4-6h-DTv">
+                            <connections>
+                                <segue destination="Qg4-zg-K5B" kind="show" id="Z7W-lg-KgA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="btnClear" destination="lVX-SD-Tr5" id="ZCA-mv-1mt"/>
+                        <outlet property="btnBackspace" destination="7nU-Ge-Mqd" id="i6t-tc-QbH"/>
+                        <outlet property="btnClear" destination="wcb-ZI-iNX" id="EQF-gA-Brw"/>
+                        <outlet property="btnClearEntry" destination="lVX-SD-Tr5" id="l9A-mv-ZiY"/>
+                        <outlet property="btnDivision" destination="2Kh-ip-fPl" id="nPt-bW-ziD"/>
+                        <outlet property="btnEquals" destination="iPf-Fg-LNv" id="tlQ-OH-9o7"/>
+                        <outlet property="btnMinus" destination="r4g-HD-WqC" id="ZFF-QT-E1s"/>
+                        <outlet property="btnMultiply" destination="qte-qK-k9H" id="1pC-xG-SxE"/>
+                        <outlet property="btnPercentage" destination="yi7-gp-z00" id="vct-Ut-MF5"/>
+                        <outlet property="btnPlus" destination="COV-Jr-HZh" id="ODL-6o-mVn"/>
+                        <outlet property="btnPlusMinus" destination="gXT-oL-9OV" id="WaQ-6b-TBb"/>
+                        <outlet property="btnSquareRoot" destination="gH2-Uu-nzE" id="Tor-tm-0T4"/>
+                        <outlet property="btnSquared" destination="7Dw-8u-gYV" id="2R6-Au-Qz5"/>
+                        <outlet property="calcView" destination="8bC-Xf-vdC" id="fVx-Q1-YUC"/>
+                        <outlet property="ivResults" destination="rtX-0s-sxL" id="MrI-ev-9ud"/>
                         <outlet property="resultArea" destination="yGs-eF-zph" id="NZS-Nw-eIN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1061.25" y="32.74647887323944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ETQ-EG-9Nj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4W-kX-Ea0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xBF-2T-btc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Aav-3p-6P4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vul-oN-24w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="xg0-mg-8cs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsViewController" id="Qg4-zg-K5B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLH-ts-mgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126.25" y="32.74647887323944"/>
         </scene>
     </scenes>
     <resources>
-        <image name="abstract-blue-particles-background_egre8rf_g__F0000" width="3840" height="2160"/>
+        <image name="default" width="3840" height="2160"/>
     </resources>
 </document>

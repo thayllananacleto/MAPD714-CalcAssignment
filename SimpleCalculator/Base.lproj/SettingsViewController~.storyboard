@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j4W-kX-Ea0">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-9g-jsM">
+                                <rect key="frame" x="0.0" y="542" width="159.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liO-fo-fpY"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLW-uS-je3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-tc-46i">
+                                <rect key="frame" x="0.0" y="472" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="r0n-23-kzD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGP-Nc-oyh"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feg-rM-fFV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-vI-5jm">
+                                <rect key="frame" x="0.0" y="402" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="k7v-b2-FQD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87K-ic-ecs"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCX-HF-8Va"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-1i-ZgF">
+                                <rect key="frame" x="0.0" y="332" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="z4P-Mt-ihf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYR-6c-fDh"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hj-46-GGx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVX-SD-Tr5">
+                                <rect key="frame" x="0.0" y="262" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="rVL-OM-2zg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CE"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGf-Ts-nvO"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56l-BV-rgK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-Uu-nzE">
+                                <rect key="frame" x="0.0" y="192" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="H6g-rw-fzh"/>
+                                    <constraint firstAttribute="width" constant="79" id="url-mP-rOY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="√"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="url-mP-rOY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7R-xO-fO7"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCa-0c-k1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-8u-gYV">
+                                <rect key="frame" x="80.5" y="192" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="mzX-lb-OLs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="x²"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mzX-lb-OLs"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVi-G2-9r7"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltm-Do-geF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-ZI-iNX">
+                                <rect key="frame" x="80.5" y="262" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="66k-eJ-245"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pie-Vp-UPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnJ-fZ-aSL">
+                                <rect key="frame" x="80.5" y="332" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wL-5Z-4BC"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbH-rS-b5T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-FE-AVv">
+                                <rect key="frame" x="80.5" y="402" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1u-05-NV5"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXM-fn-lum"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-hV-MDd">
+                                <rect key="frame" x="80.5" y="472" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsB-AC-bmZ"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvq-ly-BRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-oL-9OV">
+                                <rect key="frame" x="160.5" y="262" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="±"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJ2-8I-O6l"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clv-h8-eMH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="828-eV-2LS">
+                                <rect key="frame" x="160.5" y="402" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxq-ns-ed5"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lL4-e2-aro"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-2Y-Bbs">
+                                <rect key="frame" x="160.5" y="472" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gio-rj-2bR"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz0-e6-CyL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-b7-EAc">
+                                <rect key="frame" x="160.5" y="542" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="70"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cQ-rT-x1J"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JP-UT-fwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kh-ip-fPl">
+                                <rect key="frame" x="241" y="262" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dar-1Q-8Ym"/>
+                                    <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N45-hV-eot"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qte-qK-k9H">
+                                <rect key="frame" x="241" y="332" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCo-7c-bJD"/>
+                                    <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbD-ro-XMe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-HD-WqC">
+                                <rect key="frame" x="241" y="402" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="80"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ema-Jm-SQz"/>
+                                    <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPl-gJ-LKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COV-Jr-HZh">
+                                <rect key="frame" x="241" y="472" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5R-t3-Tnu"/>
+                                    <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kq-GU-K4r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Fg-LNv">
+                                <rect key="frame" x="241" y="542" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.73343857020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOD-u6-Vlk"/>
+                                    <action selector="onOperatorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ur-bx-vx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-3O-iJT">
+                                <rect key="frame" x="160.5" y="332" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.3121707471632712" green="0.51731043781725883" blue="0.5092678941390274" alpha="0.061188998287671235" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="50"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3S-bj-Xxe"/>
+                                    <action selector="onNumberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzv-2y-D46"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-gp-z00">
+                                <rect key="frame" x="160.5" y="192" width="79.5" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Y8o-sY-XiR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="40"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="%"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Y8o-sY-XiR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5L-f6-fqg"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHR-xl-0tw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="-4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-Ge-Mqd">
+                                <rect key="frame" x="241" y="192" width="79" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="25"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="⌫"/>
+                                <connections>
+                                    <action selector="buttonAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWO-rq-XZ3"/>
+                                    <action selector="onFunctionButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iy-De-oHJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abstract-blue-particles-background_egre8rf_g__F0000" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-0s-sxL">
+                                <rect key="frame" x="-1" y="44" width="321" height="148"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yGs-eF-zph">
+                                <rect key="frame" x="7" y="125" width="306" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="fpN-GC-Wh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="baseline" secondItem="lVX-SD-Tr5" secondAttribute="firstBaseline" id="00w-YB-GzS"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="height" secondItem="gH2-Uu-nzE" secondAttribute="height" id="1Ne-Na-l74"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="leading" secondItem="2Kh-ip-fPl" secondAttribute="leading" id="1ia-bw-Y2J"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="top" secondItem="rtX-0s-sxL" secondAttribute="bottom" id="1rP-uW-baL"/>
+                            <constraint firstItem="COV-Jr-HZh" firstAttribute="width" secondItem="uZM-2Y-Bbs" secondAttribute="width" id="2Xj-3k-TUb"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="width" secondItem="gH2-Uu-nzE" secondAttribute="width" id="2e2-x4-qNH"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="leading" secondItem="Nzd-9g-jsM" secondAttribute="leading" id="2lp-QG-1IY"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="leading" secondItem="tIQ-vI-5jm" secondAttribute="leading" id="3pZ-e7-jBb"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="top" secondItem="tIQ-vI-5jm" secondAttribute="bottom" constant="1" id="3uI-iZ-cZ1"/>
+                            <constraint firstItem="uZM-2Y-Bbs" firstAttribute="top" secondItem="COV-Jr-HZh" secondAttribute="top" id="6et-6l-Pwr"/>
+                            <constraint firstItem="gLn-3O-iJT" firstAttribute="baseline" secondItem="qte-qK-k9H" secondAttribute="baseline" id="7Mk-H5-TAL"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="baseline" secondItem="ynp-hV-MDd" secondAttribute="firstBaseline" id="86t-zS-9YT"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="top" secondItem="gLn-3O-iJT" secondAttribute="top" id="8Ww-li-siV"/>
+                            <constraint firstItem="828-eV-2LS" firstAttribute="leading" secondItem="uZM-2Y-Bbs" secondAttribute="leading" id="8jd-8z-39Z"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="height" secondItem="7nU-Ge-Mqd" secondAttribute="height" id="9Lk-v1-0lc"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="baseline" secondItem="7Dw-8u-gYV" secondAttribute="firstBaseline" id="9gi-CS-5uY"/>
+                            <constraint firstItem="ynp-hV-MDd" firstAttribute="baseline" secondItem="uZM-2Y-Bbs" secondAttribute="baseline" id="AU3-eU-CyW"/>
+                            <constraint firstItem="V4j-b7-EAc" firstAttribute="top" secondItem="iPf-Fg-LNv" secondAttribute="top" id="Abe-ag-Pen"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="top" secondItem="yGs-eF-zph" secondAttribute="bottom" constant="8" symbolic="YES" id="Asv-Ka-tXr"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="top" secondItem="ynp-hV-MDd" secondAttribute="top" id="B8l-sY-6b2"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="trailing" secondItem="gXT-oL-9OV" secondAttribute="trailing" id="BnI-Se-har"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="top" secondItem="pcV-1i-ZgF" secondAttribute="bottom" constant="1" id="Cjr-nE-kuf"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="trailing" secondItem="HQq-FE-AVv" secondAttribute="trailing" id="Cua-VH-81j"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="leading" secondItem="yi7-gp-z00" secondAttribute="trailing" constant="1" id="D1w-0x-hpf"/>
+                            <constraint firstItem="gXT-oL-9OV" firstAttribute="top" secondItem="2Kh-ip-fPl" secondAttribute="top" id="GM3-hr-T9I"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="leading" secondItem="wcb-ZI-iNX" secondAttribute="leading" id="Ggz-xg-M0O"/>
+                            <constraint firstItem="ynp-hV-MDd" firstAttribute="top" secondItem="uZM-2Y-Bbs" secondAttribute="top" id="Gph-fN-eqi"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="leading" secondItem="gXT-oL-9OV" secondAttribute="leading" id="HMd-a6-Kbh"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="baseline" secondItem="828-eV-2LS" secondAttribute="firstBaseline" id="HvA-oz-hLk"/>
+                            <constraint firstItem="COV-Jr-HZh" firstAttribute="trailing" secondItem="iPf-Fg-LNv" secondAttribute="trailing" id="I4l-6d-whO"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="top" secondItem="gH2-Uu-nzE" secondAttribute="bottom" constant="1" id="IGr-Nv-SRJ"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="trailing" secondItem="2Kh-ip-fPl" secondAttribute="trailing" id="IRw-GS-yH9"/>
+                            <constraint firstItem="2Kh-ip-fPl" firstAttribute="width" secondItem="gXT-oL-9OV" secondAttribute="width" id="IUw-Td-HxZ"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="width" secondItem="gH2-Uu-nzE" secondAttribute="width" id="JDl-Kz-LhL"/>
+                            <constraint firstItem="gLn-3O-iJT" firstAttribute="baseline" secondItem="qte-qK-k9H" secondAttribute="firstBaseline" id="KNR-Yn-hg7"/>
+                            <constraint firstItem="qte-qK-k9H" firstAttribute="width" secondItem="gLn-3O-iJT" secondAttribute="width" id="KhK-6C-ChO"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="leading" secondItem="ynp-hV-MDd" secondAttribute="leading" id="KyM-1r-gfT"/>
+                            <constraint firstAttribute="trailing" secondItem="rtX-0s-sxL" secondAttribute="trailing" id="MHq-bI-NjW"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="leading" secondItem="pcV-1i-ZgF" secondAttribute="leading" id="Mfu-fU-UZc"/>
+                            <constraint firstItem="iPf-Fg-LNv" firstAttribute="baseline" secondItem="Nzd-9g-jsM" secondAttribute="firstBaseline" id="NHE-qq-uxw"/>
+                            <constraint firstItem="Nzd-9g-jsM" firstAttribute="top" secondItem="V4j-b7-EAc" secondAttribute="top" id="NS9-3x-dl9"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="baseline" secondItem="tIQ-vI-5jm" secondAttribute="firstBaseline" id="NjR-7N-BPf"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="top" secondItem="7Dw-8u-gYV" secondAttribute="top" id="OIQ-sl-smh"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="baseline" secondItem="HQq-FE-AVv" secondAttribute="firstBaseline" id="OKP-Yi-1Ck"/>
+                            <constraint firstItem="uZM-2Y-Bbs" firstAttribute="baseline" secondItem="COV-Jr-HZh" secondAttribute="firstBaseline" id="OXd-wz-gnN"/>
+                            <constraint firstItem="gXT-oL-9OV" firstAttribute="leading" secondItem="gLn-3O-iJT" secondAttribute="leading" id="P3e-Pg-5Yq"/>
+                            <constraint firstItem="ynp-hV-MDd" firstAttribute="baseline" secondItem="tiX-tc-46i" secondAttribute="firstBaseline" id="PYL-lL-uqv"/>
+                            <constraint firstItem="gXT-oL-9OV" firstAttribute="trailing" secondItem="gLn-3O-iJT" secondAttribute="trailing" id="Pie-If-EQ5"/>
+                            <constraint firstItem="ynp-hV-MDd" firstAttribute="baseline" secondItem="uZM-2Y-Bbs" secondAttribute="firstBaseline" id="Q9w-Wi-d0Z"/>
+                            <constraint firstItem="r4g-HD-WqC" firstAttribute="leading" secondItem="COV-Jr-HZh" secondAttribute="leading" id="QIX-xu-nSd"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="top" secondItem="yi7-gp-z00" secondAttribute="top" id="QNt-hV-8aA"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="width" secondItem="yi7-gp-z00" secondAttribute="width" id="QTr-wN-Ijh"/>
+                            <constraint firstItem="r4g-HD-WqC" firstAttribute="trailing" secondItem="COV-Jr-HZh" secondAttribute="trailing" id="S2n-e3-KVj"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="leading" secondItem="lVX-SD-Tr5" secondAttribute="leading" id="S4q-Tw-JbK"/>
+                            <constraint firstItem="uZM-2Y-Bbs" firstAttribute="leading" secondItem="V4j-b7-EAc" secondAttribute="leading" id="Sqx-hr-3dN"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="baseline" secondItem="828-eV-2LS" secondAttribute="baseline" id="T7Y-5g-1TQ"/>
+                            <constraint firstItem="yGs-eF-zph" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="UAA-Mn-lR3"/>
+                            <constraint firstItem="gLn-3O-iJT" firstAttribute="trailing" secondItem="828-eV-2LS" secondAttribute="trailing" id="UTv-uW-SjX"/>
+                            <constraint firstItem="rtX-0s-sxL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ubk-Sb-kER"/>
+                            <constraint firstItem="gXT-oL-9OV" firstAttribute="bottom" secondItem="2Kh-ip-fPl" secondAttribute="bottom" id="Ug6-ve-y0A"/>
+                            <constraint firstItem="qte-qK-k9H" firstAttribute="leading" secondItem="r4g-HD-WqC" secondAttribute="leading" id="VKX-Hg-AkS"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="top" secondItem="HQq-FE-AVv" secondAttribute="top" id="VNs-3z-qtb"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="top" secondItem="828-eV-2LS" secondAttribute="top" id="VRa-CU-fZd"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="baseline" secondItem="wcb-ZI-iNX" secondAttribute="baseline" id="VuP-OU-J1b"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="baseline" secondItem="yi7-gp-z00" secondAttribute="firstBaseline" id="WSn-P7-k2E"/>
+                            <constraint firstItem="uZM-2Y-Bbs" firstAttribute="baseline" secondItem="COV-Jr-HZh" secondAttribute="baseline" id="Xba-59-gf0"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="baseline" secondItem="gLn-3O-iJT" secondAttribute="firstBaseline" id="Xgh-GU-tN2"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="top" secondItem="jnJ-fZ-aSL" secondAttribute="top" id="Xgr-GY-cMH"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="height" secondItem="Nzd-9g-jsM" secondAttribute="height" id="Y6r-Mn-wjA"/>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="baseline" secondItem="gXT-oL-9OV" secondAttribute="baseline" id="YBW-PI-sLN"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="trailing" secondItem="tIQ-vI-5jm" secondAttribute="trailing" id="ZI6-JP-Knj"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="height" secondItem="7nU-Ge-Mqd" secondAttribute="height" id="ZPT-S8-zWd"/>
+                            <constraint firstItem="iPf-Fg-LNv" firstAttribute="width" secondItem="V4j-b7-EAc" secondAttribute="width" id="Zt3-YU-ElZ"/>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="trailing" secondItem="jnJ-fZ-aSL" secondAttribute="trailing" id="Zxv-ZP-uJp"/>
+                            <constraint firstItem="tiX-tc-46i" firstAttribute="baseline" secondItem="ynp-hV-MDd" secondAttribute="baseline" id="a62-KT-60v"/>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="baseline" secondItem="gXT-oL-9OV" secondAttribute="firstBaseline" id="axq-tx-ncs"/>
+                            <constraint firstItem="rtX-0s-sxL" firstAttribute="centerX" secondItem="yGs-eF-zph" secondAttribute="centerX" id="bZP-pa-0pU"/>
+                            <constraint firstItem="2Kh-ip-fPl" firstAttribute="leading" secondItem="qte-qK-k9H" secondAttribute="leading" id="bnj-PB-Apr"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="top" secondItem="wcb-ZI-iNX" secondAttribute="top" id="cQz-te-c5P"/>
+                            <constraint firstItem="yGs-eF-zph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="dQe-0Q-5R8"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="bottom" secondItem="7nU-Ge-Mqd" secondAttribute="bottom" id="dkO-fV-pvt"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="trailing" secondItem="tiX-tc-46i" secondAttribute="trailing" id="e6E-BU-7gY"/>
+                            <constraint firstItem="828-eV-2LS" firstAttribute="bottom" secondItem="r4g-HD-WqC" secondAttribute="bottom" id="eSk-Mt-JHD"/>
+                            <constraint firstItem="ynp-hV-MDd" firstAttribute="trailing" secondItem="Nzd-9g-jsM" secondAttribute="trailing" id="eVP-gD-bmK"/>
+                            <constraint firstItem="gLn-3O-iJT" firstAttribute="top" secondItem="qte-qK-k9H" secondAttribute="top" id="eYv-MP-l1b"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="leading" secondItem="7Dw-8u-gYV" secondAttribute="trailing" constant="1" id="f6Z-vi-XbM"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fwu-KT-bFy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nzd-9g-jsM" secondAttribute="bottom" constant="1" id="gEQ-La-FiP"/>
+                            <constraint firstItem="qte-qK-k9H" firstAttribute="trailing" secondItem="r4g-HD-WqC" secondAttribute="trailing" id="hVz-iA-dJb"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="baseline" secondItem="jnJ-fZ-aSL" secondAttribute="firstBaseline" id="hou-Sc-mWS"/>
+                            <constraint firstItem="Nzd-9g-jsM" firstAttribute="top" secondItem="tiX-tc-46i" secondAttribute="bottom" constant="1" id="iYS-vB-qHQ"/>
+                            <constraint firstItem="r4g-HD-WqC" firstAttribute="width" secondItem="828-eV-2LS" secondAttribute="width" id="iZx-Nu-LyJ"/>
+                            <constraint firstItem="yi7-gp-z00" firstAttribute="top" secondItem="7nU-Ge-Mqd" secondAttribute="top" id="iZy-2h-Wlh"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="trailing" secondItem="pcV-1i-ZgF" secondAttribute="trailing" id="isS-Uf-cHJ"/>
+                            <constraint firstItem="lVX-SD-Tr5" firstAttribute="baseline" secondItem="wcb-ZI-iNX" secondAttribute="firstBaseline" id="jij-3Y-dU6"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="trailing" secondItem="wcb-ZI-iNX" secondAttribute="trailing" id="kBA-7p-vap"/>
+                            <constraint firstItem="COV-Jr-HZh" firstAttribute="leading" secondItem="iPf-Fg-LNv" secondAttribute="leading" id="kcp-On-jT5"/>
+                            <constraint firstItem="V4j-b7-EAc" firstAttribute="bottom" secondItem="iPf-Fg-LNv" secondAttribute="bottom" id="kmm-W2-O5w"/>
+                            <constraint firstItem="7Dw-8u-gYV" firstAttribute="leading" secondItem="gH2-Uu-nzE" secondAttribute="trailing" constant="1" id="n5W-gS-hUf"/>
+                            <constraint firstItem="rtX-0s-sxL" firstAttribute="trailing" secondItem="7nU-Ge-Mqd" secondAttribute="trailing" id="nEc-xk-lXq"/>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="top" secondItem="gXT-oL-9OV" secondAttribute="top" id="nHi-1A-Ce4"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="height" secondItem="7nU-Ge-Mqd" secondAttribute="height" id="ni8-7b-68n"/>
+                            <constraint firstItem="828-eV-2LS" firstAttribute="top" secondItem="r4g-HD-WqC" secondAttribute="top" id="oK9-Ea-vP6"/>
+                            <constraint firstItem="828-eV-2LS" firstAttribute="trailing" secondItem="uZM-2Y-Bbs" secondAttribute="trailing" id="otg-Yj-wun"/>
+                            <constraint firstItem="iPf-Fg-LNv" firstAttribute="height" secondItem="Nzd-9g-jsM" secondAttribute="height" id="qcJ-2K-W4c"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="width" secondItem="gH2-Uu-nzE" secondAttribute="width" id="rSw-Eg-QFq"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="top" secondItem="lVX-SD-Tr5" secondAttribute="bottom" constant="1" id="rcZ-WK-DV1"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="leading" secondItem="tiX-tc-46i" secondAttribute="leading" id="s6J-Vb-yE8"/>
+                            <constraint firstItem="gLn-3O-iJT" firstAttribute="leading" secondItem="828-eV-2LS" secondAttribute="leading" id="sVa-fU-XmP"/>
+                            <constraint firstItem="wcb-ZI-iNX" firstAttribute="leading" secondItem="jnJ-fZ-aSL" secondAttribute="leading" id="skQ-kg-2fL"/>
+                            <constraint firstItem="uZM-2Y-Bbs" firstAttribute="trailing" secondItem="V4j-b7-EAc" secondAttribute="trailing" id="tyL-wM-uCY"/>
+                            <constraint firstItem="2Kh-ip-fPl" firstAttribute="trailing" secondItem="qte-qK-k9H" secondAttribute="trailing" id="vOV-ZV-w5z"/>
+                            <constraint firstItem="pcV-1i-ZgF" firstAttribute="baseline" secondItem="jnJ-fZ-aSL" secondAttribute="baseline" id="xAm-HL-cc6"/>
+                            <constraint firstItem="rtX-0s-sxL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqe-EV-4rL"/>
+                            <constraint firstItem="gH2-Uu-nzE" firstAttribute="trailing" secondItem="lVX-SD-Tr5" secondAttribute="trailing" id="y7e-1f-Oud"/>
+                            <constraint firstItem="iPf-Fg-LNv" firstAttribute="width" secondItem="7nU-Ge-Mqd" secondAttribute="width" id="yao-np-fZq"/>
+                            <constraint firstItem="HQq-FE-AVv" firstAttribute="trailing" secondItem="ynp-hV-MDd" secondAttribute="trailing" id="ydT-9C-ofi"/>
+                            <constraint firstItem="Nzd-9g-jsM" firstAttribute="baseline" secondItem="iPf-Fg-LNv" secondAttribute="firstBaseline" id="z2c-4E-gMs"/>
+                            <constraint firstItem="7nU-Ge-Mqd" firstAttribute="height" secondItem="lVX-SD-Tr5" secondAttribute="height" id="zDG-ej-nII"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="leading" secondItem="HQq-FE-AVv" secondAttribute="leading" id="zNJ-Jd-2g9"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="baseline" secondItem="pcV-1i-ZgF" secondAttribute="firstBaseline" id="zgq-WX-VkP"/>
+                            <constraint firstItem="jnJ-fZ-aSL" firstAttribute="baseline" secondItem="gLn-3O-iJT" secondAttribute="baseline" id="zoB-0F-p0a"/>
+                            <constraint firstItem="tIQ-vI-5jm" firstAttribute="baseline" secondItem="HQq-FE-AVv" secondAttribute="baseline" id="zqO-ah-5OC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IR6-1Z-kbo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="Bn4-6h-DTv">
+                            <connections>
+                                <segue destination="KNB-CA-rhJ" kind="show" id="Z7W-lg-KgA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnClear" destination="lVX-SD-Tr5" id="ZCA-mv-1mt"/>
+                        <outlet property="calcView" destination="8bC-Xf-vdC" id="fVx-Q1-YUC"/>
+                        <outlet property="resultArea" destination="yGs-eF-zph" id="NZS-Nw-eIN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.25" y="32.74647887323944"/>
+        </scene>
+        <!--Change Theme-->
+        <scene sceneID="C7b-PR-lCz">
+            <objects>
+                <viewController title="Change Theme" id="KNB-CA-rhJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0B-vE-QxY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEN-39-P8a">
+                                <rect key="frame" x="40" y="228" width="111" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-DX-NaU">
+                                <rect key="frame" x="169" y="281" width="111" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-ZV-mAl">
+                                <rect key="frame" x="40" y="281" width="111" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNK-gD-K3f">
+                                <rect key="frame" x="169" y="228" width="111" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bNK-gD-K3f" firstAttribute="top" secondItem="qae-TE-BIz" secondAttribute="top" constant="164" id="1ir-1a-Ozb"/>
+                            <constraint firstItem="Ku7-DX-NaU" firstAttribute="leading" secondItem="lhh-ZV-mAl" secondAttribute="trailing" constant="18" id="1qz-dT-Mf3"/>
+                            <constraint firstItem="BEN-39-P8a" firstAttribute="top" secondItem="qae-TE-BIz" secondAttribute="top" constant="164" id="3Rh-XG-IUd"/>
+                            <constraint firstItem="Ku7-DX-NaU" firstAttribute="leading" secondItem="BEN-39-P8a" secondAttribute="trailing" constant="18" id="AYv-cy-OR8"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="bottom" secondItem="bNK-gD-K3f" secondAttribute="bottom" constant="281" id="FG2-s9-Afn"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="trailing" secondItem="bNK-gD-K3f" secondAttribute="trailing" constant="40" id="HUl-W5-Mzu"/>
+                            <constraint firstItem="bNK-gD-K3f" firstAttribute="leading" secondItem="BEN-39-P8a" secondAttribute="trailing" constant="18" id="I3N-Jr-F5C"/>
+                            <constraint firstItem="lhh-ZV-mAl" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="40" id="L3v-vB-n6P"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="trailing" secondItem="Ku7-DX-NaU" secondAttribute="trailing" constant="40" id="MCv-xW-7ss"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="bottom" secondItem="BEN-39-P8a" secondAttribute="bottom" constant="281" id="dGe-vn-jJI"/>
+                            <constraint firstItem="BEN-39-P8a" firstAttribute="leading" secondItem="qae-TE-BIz" secondAttribute="leading" constant="40" id="tXE-oI-Y8f"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="bottom" secondItem="Ku7-DX-NaU" secondAttribute="bottom" constant="228" id="wuH-yU-J7l"/>
+                            <constraint firstItem="qae-TE-BIz" firstAttribute="bottom" secondItem="lhh-ZV-mAl" secondAttribute="bottom" constant="228" id="xfa-Co-R6k"/>
+                            <constraint firstItem="lhh-ZV-mAl" firstAttribute="top" secondItem="qae-TE-BIz" secondAttribute="top" constant="217" id="ywo-oy-qg3"/>
+                            <constraint firstItem="Ku7-DX-NaU" firstAttribute="top" secondItem="qae-TE-BIz" secondAttribute="top" constant="217" id="zFw-3w-9go"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qae-TE-BIz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw8-m2-8pp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126.25" y="32.74647887323944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ETQ-EG-9Nj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4W-kX-Ea0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xBF-2T-btc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Aav-3p-6P4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vul-oN-24w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abstract-blue-particles-background_egre8rf_g__F0000" width="3840" height="2160"/>
+    </resources>
+</document>

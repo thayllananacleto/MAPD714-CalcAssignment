@@ -14,6 +14,12 @@ import UIKit
 //Class responsible for doing the animations on the buttons
 extension UIButton {
     
+    open override func awakeFromNib() {
+        
+        backgroundColor = Theme.current.background
+        
+    }
+    
     func pulsate() {
         
         let pulse = CASpringAnimation(keyPath: "transform.scale")
